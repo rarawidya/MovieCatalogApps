@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">MovieCatalog</string>
+    <string name="title_movie">Movie</string>
+    <string name="title_tv">TV Shows</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title">Title</string>
+    <string name="overview">Overview</string>
+    <string name="change_language_english">English</string>
+    <string name="change_language_indonesia">Indonesian</string>
+    <string name="movies">Movies</string>
+    <string name="tv_show">TV Show</string>
+    <string name="judul_film">Movie Tittle</string>
+    <string name="change_language">Change Language</string>
+    <string name="empty">Empty</string>
+    <string name="favorite">Favorite</string>
+</resources>
