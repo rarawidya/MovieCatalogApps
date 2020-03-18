@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">MovieApp</string>
+    <string name="movie_poster">movie_Poster</string>
+    <string name="title">Title</string>
+    <string name="overview">Overview</string>
+    <string name="empty">Empty</string>
+</resources>
