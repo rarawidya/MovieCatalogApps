@@ -13,6 +13,7 @@ import com.rara.moviecatalog.R
 import com.rara.moviecatalog.api.ApiRepository
 import kotlinx.android.synthetic.main.activity_detail.*
 import org.jetbrains.anko.toast
+import java.time.LocalDate
 
 class DetailActivity : AppCompatActivity(), DetailInterface {
 
@@ -63,8 +64,11 @@ class DetailActivity : AppCompatActivity(), DetailInterface {
         overview = movie.overview
         supportActionBar?.title = movie.title
 
+
         tvJudulFilm.text = movie.title
         tvSinopsis.text = movie.overview
+        tvDate.text = movie.release_date
+        tvRuntime.text = String.format("${movie.runtime} %1s",getString(R.string.minute))
 
         Glide.with(this).load(ApiRepository.BASE_IMAGE + movie.poster_path)
             .into(ivPoster)
@@ -81,6 +85,14 @@ class DetailActivity : AppCompatActivity(), DetailInterface {
 
         tvJudulFilm.text = tvShow.name
         tvSinopsis.text = tvShow.overview
+        tvDate.text = tvShow.first_air_date
+        val minute = getString(R.string.minute)
+        val runtime = if (tvShow.episode_run_time.size > 1){
+            "${tvShow.episode_run_time[0]} - ${tvShow.episode_run_time[1]} ${minute}"
+        } else {
+            "${tvShow.episode_run_time[0]} ${minute}"
+        }
+        tvRuntime.text = runtime
 
         Glide.with(this).load(ApiRepository.BASE_IMAGE + tvShow.poster_path)
             .into(ivPoster)

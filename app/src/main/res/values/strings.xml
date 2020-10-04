@@ -49,4 +49,8 @@
 
     <string name="daily_notif_title">Hallo, Good Morning!</string>
     <string name="daily_notif_content">Lets check new movie today!</string>
+    <string name="release_date">Release Date</string>
+    <string name="runtime">Runtime</string>
+    <string name="minute">Minutes</string>
+
 </resources>
