@@ -39,6 +39,7 @@ class MovieAdapter(
         LayoutContainer {
         fun bind(context: Context, movie: Movie, onClickListener: (Movie) -> Unit) {
             itemView.tvJudul.text = movie.title
+            itemView.tvOverview.text = movie.overview
             Glide.with(context).load(ApiRepository.BASE_IMAGE + movie.poster_path)
                 .into(itemView.ivGambar)
             containerView.setOnClickListener { onClickListener(movie) }
