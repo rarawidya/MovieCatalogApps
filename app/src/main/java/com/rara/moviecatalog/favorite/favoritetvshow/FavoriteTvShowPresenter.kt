@@ -25,7 +25,8 @@ class FavoriteTvShowPresenter (private val favoriteTvShowInterface: FavoriteTvSh
                     TvShow(
                         favorite[i].movieId,
                         favorite[i].movieTitle,
-                        favorite[i].posterPath
+                        favorite[i].posterPath,
+                        favorite[i].overview
                     )
                 )
             }
