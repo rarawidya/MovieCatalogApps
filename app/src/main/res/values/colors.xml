@@ -6,4 +6,6 @@
     <color name="colorBlack">#000000</color>
     <color name="colorGrey">#464444</color>
     <color name="colorWidget">#009688</color>
+    <color name="colorWhite">#ffffff</color>
+    <color name="colorDarkerGray">@android:color/darker_gray</color>
 </resources>
