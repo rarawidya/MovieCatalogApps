@@ -10,6 +10,7 @@ import com.rara.moviecatalog.R
 import com.rara.moviecatalog.api.ApiRepository
 import com.rara.moviecatalog.model.TvShow
 import kotlinx.android.extensions.LayoutContainer
+import kotlinx.android.synthetic.main.list_item.*
 import kotlinx.android.synthetic.main.list_item.view.*
 
 class TvShowAdapter(
@@ -39,6 +40,7 @@ class TvShowAdapter(
         LayoutContainer {
         fun bind(context: Context, tvShow: TvShow, onClickListener: (TvShow) -> Unit) {
             itemView.tvJudul.text = tvShow.name
+            itemView.tvOverview.text = tvShow.overview
             Glide.with(context).load(ApiRepository.BASE_IMAGE + tvShow.poster_path)
                 .into(itemView.ivGambar)
             containerView.setOnClickListener { onClickListener(tvShow) }
