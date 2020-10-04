@@ -53,6 +53,8 @@
 
     <string name="daily_notif_title">Halo, Selamat Pagi!</string>
     <string name="daily_notif_content">Ayo cek film terbaru hari ini!</string>
-
+    <string name="release_date">Tanggal Rilis</string>
+    <string name="runtime">Durasi</string>
+    <string name="minute">Menit</string>
 
 </resources>
