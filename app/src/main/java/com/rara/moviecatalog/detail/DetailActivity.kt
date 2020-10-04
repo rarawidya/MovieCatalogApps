@@ -68,6 +68,9 @@ class DetailActivity : AppCompatActivity(), DetailInterface {
 
         Glide.with(this).load(ApiRepository.BASE_IMAGE + movie.poster_path)
             .into(ivPoster)
+
+        Glide.with(this).load(ApiRepository.BASE_IMAGE + movie.backdrop_path)
+            .into(ivBackdrop)
     }
 
     override fun showTvShowDetail(tvShow: TvShowDetailModel) {
@@ -81,6 +84,9 @@ class DetailActivity : AppCompatActivity(), DetailInterface {
 
         Glide.with(this).load(ApiRepository.BASE_IMAGE + tvShow.poster_path)
             .into(ivPoster)
+
+        Glide.with(this).load(ApiRepository.BASE_IMAGE + tvShow.backdrop_path)
+            .into(ivBackdrop)
     }
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
